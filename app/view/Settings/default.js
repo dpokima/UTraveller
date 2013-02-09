@@ -31,17 +31,6 @@ Ext.define('uTraveller.view.Settings.default',{
 					'</tbody>',
 				'</table>',
 			'</section>',
-			
-			'<section id="contact-us">',
-				'<form action="contacts.php" method="post">',
-					'<h1>Contact Us</h1>',
-					'*Email: <input type="email" name="email"> </br>',
-					'<label>*Information:</label>',
-					'<textarea name="info" ROWS=3 COLS=30></textarea></br>',
-					'<input type="submit" value="Send"> </br>',
-				'</form>',
-				'<p>*Required Fields</p> </br>',
-			'</section>'
 			].join("")
 	}
 });
