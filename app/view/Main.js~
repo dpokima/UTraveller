@@ -18,23 +18,23 @@ Ext.define('uTraveller.view.Main', {
 
             },
             {
-                title: 'Contacts',
-                iconCls: 'team',
-
-            },
-            {
-                title: 'Agenda',
-                iconCls: 'time',
-
-            },
-            {
-                title: 'Message',
+                title: 'Get Started',
                 iconCls: 'action',
 
             },
             {
-                title: 'Settings',
-                iconCls: 'settings',
+                title: 'Get Started',
+                iconCls: 'action',
+
+            },
+            {
+                title: 'Get Started',
+                iconCls: 'action',
+
+            },
+            {
+                title: 'Get Started',
+                iconCls: 'action',
 
             },
 
