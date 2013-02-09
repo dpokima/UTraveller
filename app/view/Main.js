@@ -1,9 +1,7 @@
 Ext.define('uTraveller.view.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'main',
-    requires: [
-        'Ext.TitleBar',
-        'Ext.Video'
+    requires: [ "uTraveller.view.Settings"
     ],
     config: {
         tabBarPosition: 'bottom',
@@ -35,6 +33,10 @@ Ext.define('uTraveller.view.Main', {
             {
                 title: 'Settings',
                 iconCls: 'settings',
+                layout: "fit",
+                items: {
+                        xtype: "settings"
+                }
 
             },
 
