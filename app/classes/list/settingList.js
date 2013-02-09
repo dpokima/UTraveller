@@ -1,0 +1,20 @@
+Ext.define('uTraveller.classes.list.settingList',{
+	extend: "Ext.Container",
+	xtype: "Settinglist",
+	cont: "",
+	config: {
+		height: "40px",
+		style: "background-color:blue;"
+
+	},
+
+	initialize: function () {
+		var self = this;
+		this.element.on('tap', function () {
+		    console.log('settingtap');
+		    self.fireEvent('settingtap', self, self.friend);
+		});
+		console.log(this.cont);
+		this.setHtml(this.cont);
+	}
+});

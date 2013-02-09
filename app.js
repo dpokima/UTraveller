@@ -12,7 +12,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    controls: ["Main"],
+    controllers: ["Main"],
 
     views: ['Main'],
 
