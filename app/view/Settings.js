@@ -1,5 +1,5 @@
 Ext.define("uTraveller.view.Settings", {
-	extend: "Ext.Container",
+	extend: "Ext.NavigationView",
 	requires: [ "Ext.Toolbar",
 	'uTraveller.classes.list.settingList' ],
 
@@ -7,17 +7,14 @@ Ext.define("uTraveller.view.Settings", {
 
 
 	config:{
-		scrollable: true,
-		layout:{
-			layout: 'vbox'
-		} , 
-
-		items:[
-			{
-				xtype: "toolbar",
-				title: "Settings",
-				docked: "top",
-			},
+	items:{
+			title: "Settings",
+			scrollable: true,
+			layout:{
+				layout: 'vbox'
+			} , 
+			items:
+			[ 
 			{
 				xtype: "Settinglist",
 				cont: "Profile"
@@ -46,6 +43,6 @@ Ext.define("uTraveller.view.Settings", {
 				xtype: "Settinglist",
 				cont: "Notification"
 			}
-			] 
+			]}
 	}
 });
