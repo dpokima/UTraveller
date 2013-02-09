@@ -8,6 +8,7 @@ Ext.define("uTraveller.view.Settings", {
 
 
 	config:{
+		useTitleForBackButtonText: true,
 	items:{
 			title: "Settings",
 			scrollable: true,
