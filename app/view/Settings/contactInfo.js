@@ -2,6 +2,10 @@ Ext.define('uTraveller.view.Settings.contactInfo',{
 	extend:'Ext.Container',
 	xtype: 'contactInfo',
 	id: "contactForm",
+	requires:[
+	'Ext.form.FieldSet',
+	'Ext.field.Email'
+	],
 
 	config:{
 		scrollable: true,

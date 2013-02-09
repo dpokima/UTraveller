@@ -17,20 +17,25 @@ Ext.define('uTraveller.controller.new', {
         
         control: {
             "Settinglist": {
-                settingtap : function (){
-                    console.log(arguments);
-                    this.test();
+                settingtap : function (name){
+                    console.log(name);
+                    this.settingOption(name);
                 }
             }
             
         }
     },
 
-    test: function(){
+    settingOption: function(name){
         var view = this.getSettingView();
         var defaultS = this.getDefaultS();
+        if(name.search("Help") != -1){
         defaultS.setContactInfo();
-        console.log("adding");
+        }
+        else{
+            defaultS.setHtml(name);
+        }
+        console.log("adding to Navigation");
         view.push(defaultS);
     },
 
