@@ -14,7 +14,7 @@ Ext.define('uTraveller.classes.list.settingList',{
 		var self = this;
 		this.element.on('tap', function () {
 		    console.log('settingtap');
-		    self.fireEvent('settingtap', self, self.friend);
+		    self.fireEvent('settingtap', self.cont);
 		});
 		console.log(this.cont);
 		this.setHtml(this.cont);
