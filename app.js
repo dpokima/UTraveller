@@ -6,15 +6,19 @@ Ext.Loader.setPath({
 //</debug>
 
 Ext.application({
+    controllers: ["new"],
+
     name: 'uTraveller',
 
     requires: [
-        'Ext.MessageBox'
+        'Ext.MessageBox',
     ],
 
-    controllers: ["Main"],
+
 
     views: ['Main'],
+
+    
 
     icon: {
         '57': 'resources/icons/Icon.png',

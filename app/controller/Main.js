@@ -1,11 +1,9 @@
-Ext.define('uTraveller.contoller.main',{
+Ext.define('uTraveller.contoller.Main',{
 	extend: "Ext.app.Contoller",
 	xtype: "mainControl",
 
 	config:{
-		views: ['Settings', 'Main','uTraveller.classes.list.settingList'],
-		stores: [],
-		models: [],
+		views: ['Settings', 'Main','uTraveller.classes.list.settingList']
 
 
 	},
