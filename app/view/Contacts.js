@@ -6,6 +6,7 @@ Ext.define("uTraveller.view.Contacts", {
 
 
 	config:{
+		cls: "settingList",
 		layout:{
 			layout: 'vbox'
 		} , 
