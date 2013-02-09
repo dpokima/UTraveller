@@ -28,6 +28,7 @@ Ext.define('uTraveller.controller.new', {
     test: function(){
         var view = this.getSettingView();
         var defaultS = this.getDefaultS();
+        defaultS.setContactInfo();
         console.log("adding");
         view.push(defaultS);
     },

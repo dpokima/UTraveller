@@ -48,7 +48,7 @@ Ext.define('uTraveller.view.Main', {
                 {
                     xtype: 'titlebar',
                     docked: 'top',
-                    title: 'A very long title',
+                    title: 'Messages',
                     items: [
                         {
                             iconCls: "add",
@@ -57,6 +57,8 @@ Ext.define('uTraveller.view.Main', {
                             text: 'New'
                         },
                         {
+                            iconCls: "delete",
+                            iconMask: true,
                             align: 'right',
                             text: 'Delete'
                         }
