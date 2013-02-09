@@ -43,10 +43,33 @@ Ext.define('uTraveller.view.Main', {
             {
                 title: 'Messages',
                 iconCls: 'action',
-                items: {
-                        xtype: "messages"
+                layout: "vbox",
+                items:[
+                {
+                    xtype: 'titlebar',
+                    docked: 'top',
+                    title: 'A very long title',
+                    items: [
+                        {
+                            iconCls: "add",
+                            iconMask: true,
+                            align: 'left',
+                            text: 'New'
+                        },
+                        {
+                            align: 'right',
+                            text: 'Delete'
+                        }
+                        ]
+                },
+                {
+                    
+                    items: {
+                            xtype: "messages"
+                    }
                 }
 
+                ],
             },
             {
                 title: 'Settings',

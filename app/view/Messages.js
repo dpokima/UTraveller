@@ -9,11 +9,6 @@ Ext.define("uTraveller.view.Messages", {
 		layout:{
 			layout: 'vbox'
 		} , 
-		items:
-			{
-				xtype: "toolbar",
-				title: "Messages",
-				docked: "top",
-			}
+
 	}
 });
