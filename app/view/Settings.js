@@ -4,6 +4,7 @@ Ext.define("uTraveller.view.Settings", {
 	'uTraveller.classes.list.settingList' ],
 
 	xtype: "settings",
+	id: "settingView",
 
 
 	config:{
