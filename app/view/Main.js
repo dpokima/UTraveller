@@ -9,24 +9,24 @@ Ext.define('uTraveller.view.Main', {
     ],
     config: {
         tabBarPosition: 'bottom',
-
+        defaults: {
+            styleHtmlContent: true,
+            layout: "fit",
+        },
         items: [
             {
                 title: 'Home',
                 iconCls: 'home',
-                layout: "fit",
                 items: {
                         xtype: "home"
                 },
-
-                styleHtmlContent: true,
+                
                 scrollable: true,
 
             },
             {
                 title: 'Contacts',
                 iconCls: 'team',
-                layout: "fit",
                 items: {
                         xtype: "contacts"
                 }
@@ -35,7 +35,6 @@ Ext.define('uTraveller.view.Main', {
             {
                 title: 'Agenda',
                 iconCls: 'time',
-                layout: "fit",
                 items: {
                         xtype: "agenda"
                 }
@@ -44,7 +43,6 @@ Ext.define('uTraveller.view.Main', {
             {
                 title: 'Messages',
                 iconCls: 'action',
-                layout: "fit",
                 items: {
                         xtype: "messages"
                 }
@@ -53,7 +51,6 @@ Ext.define('uTraveller.view.Main', {
             {
                 title: 'Settings',
                 iconCls: 'settings',
-                layout: "fit",
                 items: {
                         xtype: "settings"
                 }

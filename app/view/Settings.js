@@ -41,7 +41,7 @@ Ext.define("uTraveller.view.Settings", {
 			},
 			{
 				xtype: "Settinglist",
-				cont: "Notification"
+				cont: "Notifications"
 			}
 			]}
 	}
