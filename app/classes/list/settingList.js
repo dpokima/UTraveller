@@ -4,7 +4,9 @@ Ext.define('uTraveller.classes.list.settingList',{
 	cont: "",
 	config: {
 		height: "40px",
-		style: "background-color:blue;"
+		style: "background-color:grey;",
+		cls: "settingList",
+		border: 1
 
 	},
 
