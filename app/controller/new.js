@@ -10,7 +10,8 @@ Ext.define('uTraveller.controller.new', {
                 selector: 'settings defaultSetting',
                 xtype: "defaultSetting",
                 autoCreate: true
-                }
+                },
+            contactForm: '#contactForm'
         },
         
         
@@ -37,5 +38,11 @@ Ext.define('uTraveller.controller.new', {
     //called when the Application is launched, remove if not needed
     launch: function(app) {
         console.log(app.views.pop);
-    }
+    },
+
+    submit: function() {
+        var form = this.getContactForm();
+
+        console.log(form);
+    },
 });
