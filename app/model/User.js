@@ -10,8 +10,8 @@ Ext.define('uTraveller.model.User', {
             {name: 'aboutMe', type: 'auto'},
             {name: 'Sex', type: 'auto'},
             {name: 'ageRange', type: 'auto'},
-            {name: 'ranking', type: 'int'},
-            {name: 'interest', type: 'auto'}
+            {name: 'Ranking', type: 'int'},
+            {name: 'Interest', type: 'auto'}
         ]
     }
 });
