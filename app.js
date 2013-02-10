@@ -6,7 +6,11 @@ Ext.Loader.setPath({
 //</debug>
 
 Ext.application({
-    controllers: ["new"],
+    models: ["User"],
+
+    controllers: ["Main","Message","Contacts","new"],
+
+    stores: ["Users"],
 
     name: 'uTraveller',
 

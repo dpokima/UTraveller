@@ -1,4 +1,4 @@
-Ext.define('uTraveller.controller.Main', {
+Ext.define('uTraveller.controller.Contacts', {
     extend: 'Ext.app.Controller',
     
     config: {

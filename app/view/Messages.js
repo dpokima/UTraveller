@@ -1,14 +1,15 @@
 Ext.define("uTraveller.view.Messages", {
 	extend: "Ext.Container",
-	requires: [ "Ext.Toolbar" ],
+	requires: [ "Ext.Toolbar" ,'uTraveller.classes.list.messageList'],
 
 	xtype: "messages",
 
 
 	config:{
-		layout:{
-			layout: 'vbox'
-		} , 
+		layout: 'vbox',
+		items:{
+				xtype: 'messagelist',
+		} 
 
 	}
 });
