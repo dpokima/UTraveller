@@ -43,14 +43,14 @@ Ext.define('uTraveller.view.Main', {
             {
                 title: 'Messages',
                 iconCls: 'action',
-                layout: "vbox",
+                layout: "fit",
                 styleHtmlContent: true,
                 items:[
                 {
                     xtype: 'titlebar',
                     docked: 'top',
                     title: 'Messages',
-                   
+
                     items: [
                         {
                             iconCls: "add",

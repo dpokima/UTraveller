@@ -54,5 +54,9 @@ Ext.define('uTraveller.classes.list.messageItem',{
 
 			}
 		]);
+		self.element.on('tap', function () {
+		    console.log('messagetap');
+		    self.fireEvent('messagetap', self.id);
+		});	
 	}
 });
