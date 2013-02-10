@@ -17,12 +17,15 @@ Ext.define('uTraveller.controller.new', {
         
         control: {
             "Settinglist": {
-                settingtap : function (name){
+                settingtap: function (name){
                     console.log(name);
                     this.settingOption(name);
                 }
+            },
+
+            "button[action=submitContactForm]": {
+                tap: "submitContactForm"
             }
-            
         }
     },
 
@@ -45,7 +48,7 @@ Ext.define('uTraveller.controller.new', {
         console.log(app.views.pop);
     },
 
-    submit: function() {
+    submitContactForm: function() {
         var form = this.getContactForm();
 
         console.log(form);

@@ -13,5 +13,5 @@ Ext.define('uTraveller.controller.Contacts', {
     //called when the Application is launched, remove if not needed
     launch: function(app) {
         
-    }
+    },
 });

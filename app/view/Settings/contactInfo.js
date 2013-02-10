@@ -1,7 +1,7 @@
 Ext.define('uTraveller.view.Settings.contactInfo',{
 	extend:'Ext.Container',
 	xtype: 'contactInfo',
-	id: "contactForm",
+
 	requires:[
 	'Ext.form.FieldSet',
 	'Ext.field.Email'
@@ -44,6 +44,7 @@ Ext.define('uTraveller.view.Settings.contactInfo',{
 				xtype: "fieldset",
 				title: "Contact Us",
 				instructions:"Email is optional.",
+				id: "contactForm",
 
 				items: [
 					{
@@ -67,7 +68,7 @@ Ext.define('uTraveller.view.Settings.contactInfo',{
 				xtype:'button',
 				ul: 'confirm',
 				text: 'Send',
-				action: 'submitContact'
+				action: 'submitContactForm'
 			}
 		]
 	}
