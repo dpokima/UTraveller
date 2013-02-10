@@ -2,3 +2,34 @@
 	border-style: solid;
 	border-color: black;
 }
+
+
+.purpleE{
+	color: rgb(255, 0 ,251);
+	background-color: rgb(255, 0, 251);
+}
+
+.blueE{
+	color: rgb(27, 142, 224);
+	background-color: rgb(27, 142, 224);
+}
+
+.lightgreenE{
+	color: rgb(27,224,138);
+	background-color: rgb(27, 224, 138);
+}
+
+.greenE{
+	color: rgb(83,224,27);
+	background-color: rgb(83,224,27);
+}
+
+.orangeE{
+	color: rgb(255,179,0);
+	background-color: rgb(255, 179, 0);
+}
+
+.redE{
+	color: rgb(83,224,27);
+	background-color: rgb(83, 224, 27);
+}

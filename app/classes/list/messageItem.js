@@ -1,6 +1,6 @@
 Ext.define('uTraveller.classes.list.messageItem',{
 	extend:'Ext.carousel.Carousel',
-	requires:['Ext.Img'],
+	requires:['Ext.Img', 'uTraveller.classes.tool.rankingEmo'],
 	xtype:'messageitem',
 	user : null,
 	config: {
@@ -35,6 +35,7 @@ Ext.define('uTraveller.classes.list.messageItem',{
 				layout: 'hbox',
 				items:[{
 							height: 40,
+							width: '100%',
 							layout: "vbox",
 							margin: '3 10 0 10',
 							items: [
@@ -47,8 +48,10 @@ Ext.define('uTraveller.classes.list.messageItem',{
 
 						},
 						{
+							xtype: 'rankingemo',
+							ranking : self.user.get("Ranking"),
 							right: 5,
-							html:"<p>test " + self.user.get("Ranking") + "%</p>"
+							
 						}
 						]
 
@@ -56,7 +59,7 @@ Ext.define('uTraveller.classes.list.messageItem',{
 		]);
 		self.element.on('tap', function () {
 		    console.log('messagetap');
-		    self.fireEvent('messagetap', self.id);
+		    self.fireEvent('messagetap', self.id, self.user.get("firstName") + " " + self.user.get("lastName") );
 		});	
 	}
 });
