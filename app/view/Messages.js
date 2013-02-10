@@ -7,6 +7,7 @@ Ext.define("uTraveller.view.Messages", {
 
 	config:{
 		layout: 'vbox',
+		cls: "messages",
 		items:{
 				xtype: 'messagelist',
 		} 
