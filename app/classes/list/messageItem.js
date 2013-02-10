@@ -3,8 +3,11 @@ Ext.define('uTraveller.classes.list.messageItem',{
 	requires:['Ext.Img', 'uTraveller.classes.tool.rankingEmo'],
 	xtype:'messageitem',
 	user : null,
-	config: {
-		height: "46px"
+	config:{
+		height: "46px",
+		border: 1,
+		cls: "messageitem",
+		style: "border-top-color: rgb(242,237,237); border-bottom-color: rgb(15,1,1);"  
 	},
 	initialize : function(){
 		var self = this;

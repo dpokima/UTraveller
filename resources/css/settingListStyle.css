@@ -3,6 +3,10 @@
 	border-color: black;
 }
 
+.messageitem {
+	border-style: solid !important;
+	
+}
 
 .purpleE{
 	color: rgb(255, 0 ,251);
