@@ -30,10 +30,29 @@ Ext.define('uTraveller.classes.list.messageItem',{
 						},
 				]
 			},
-		{
-			html: "I like Basketball"
-		}
-		]
-			);
+			{
+				style: "background-color:gray;",
+				layout: 'hbox',
+				items:[{
+							height: 40,
+							layout: "vbox",
+							margin: '3 10 0 10',
+							items: [
+							{
+								html: "<p>Age Range : " + self.user.get("ageRange") + "</p>"
+							},
+							{
+								html: "<p>Sex : " + self.user.get("Sex") + "</p>"
+							}]
+
+						},
+						{
+							right: 5,
+							html:"<p>test " + self.user.get("Ranking") + "%</p>"
+						}
+						]
+
+			}
+		]);
 	}
 });
