@@ -20,7 +20,7 @@ Ext.define('uTraveller.classes.list.messageItem',{
 				items:[
 						{
 							xtype:'image',
-							src: 'resources/image/Kobe.jpg',
+							src: self.user.get("imgSrc") ,
 							height:40,
 							width: 45,
 						},
