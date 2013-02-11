@@ -1,0 +1,4 @@
+1. Add Emoticon for chatting makes it look more modern.
+2. On taphold phone should vibrate and maybe icon become bigger.
+3. Taphold to chat bubble.
+4. CSS border Image Generator.
