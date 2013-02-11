@@ -5,18 +5,20 @@ Ext.define('uTraveller.controller.Message', {
         views: ['Messages',
                 'uTraveller.classes.list.messageList',
                 'messageView',
-                "uTraveller.view.Messages.userMessage"],
+                "uTraveller.view.Messages.userMessage",
+                'uTraveller.view.Messages.messageSheet'],
         
         refs: {
             message: "#messages",
-            messageview: '#messageview'          
+            messageview: '#messageview',  
+            messagesheet: "#messagesheet"        
         },
         control: {
             'messageitem':{
-                messagetap :function(id, name, user){
-                    console.log(name);
-                    this.userMessages(name, user);
-                }
+                messagetap : "userMessages",
+                
+                messagehold: "showMessageSheet"
+                
             },
             "button[action=newMessage]" : {
                 tap: function(){
@@ -30,8 +32,13 @@ Ext.define('uTraveller.controller.Message', {
            
         }
     },
+
+    showMessageSheet :function(user){
+        var messageSheet = this.getMessagesheet();
+        messageSheet.show();
+    },
     
-    userMessages: function(name, user){
+    userMessages: function(id ,name, user){
         messageView = this.getMessageview();
         messageView.showMessage(name,user);
     },
@@ -44,6 +51,7 @@ Ext.define('uTraveller.controller.Message', {
     },
     //called when the Application is launched, remove if not needed
     launch: function(app) {
+        console.log("Message Controller");
         
     }
 });

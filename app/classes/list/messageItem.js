@@ -8,9 +8,17 @@ Ext.define('uTraveller.classes.list.messageItem',{
 		border: 1,
 		cls: "messageitem"
 	},
+
+
 	initialize : function(){
 		var self = this;
 		console.log(self.user);
+		// Needed cause taphold triggers tap
+		// To stop tap, reference to handler
+		// is required.
+		self.taphandler = function(){
+			self.fireEvent('messagetap', self.id, self.user.get("firstName") + " " + self.user.get("lastName"), self.user);
+		}
 		self.add(
 			[
 			{
@@ -59,9 +67,18 @@ Ext.define('uTraveller.classes.list.messageItem',{
 
 			}
 		]);
-		self.element.on('tap', function () {
-		    console.log('messagetap');
-		    self.fireEvent('messagetap', self.id, self.user.get("firstName") + " " + self.user.get("lastName"), self.user);
+
+		self.element.on({
+			//special Case
+			tap: self.taphandler,
+		    taphold: function(){
+		    	console.log("stop holding me");
+		    	self.element.un('tap', self.taphandler);
+		    	Ext.Function.defer(function(){
+		    		self.element.on('tap', self.taphandler);
+		    	}, 1000);
+		    	self.fireEvent('messagehold', self.user);
+		    }
 		});	
-	}
+	},
 });

@@ -1,6 +1,6 @@
 Ext.define("uTraveller.view.Messages", {
 	extend: "Ext.Panel",
-	requires: [ "Ext.Toolbar" ,'uTraveller.classes.list.messageList'],
+	requires: [ "Ext.Toolbar" ,'uTraveller.classes.list.messageList','uTraveller.view.Messages.messageSheet'],
 
 	xtype: "messages",
 
@@ -10,9 +10,14 @@ Ext.define("uTraveller.view.Messages", {
 		cls: "messages",
 		width: '100%',
 		height: '100%',
-		items:{
-			xtype: 'messagelist',
+		items:[
+		{
+			xtype: 'messagelist'
+		},
+		{
+			xtype: 'messagesheet'
 		}
+		]
 
 	},
 	initialize: function(){
