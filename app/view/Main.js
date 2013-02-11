@@ -5,8 +5,8 @@ Ext.define('uTraveller.view.Main', {
                 "uTraveller.view.Messages",
                 "uTraveller.view.Agenda",
                 "uTraveller.view.Contacts",
-                "uTraveller.view.Home"
-    ],
+                "uTraveller.view.Home",
+                'uTraveller.view.messageView'],
     config: {
         tabBarPosition: 'bottom',
         defaults: {
@@ -36,44 +36,17 @@ Ext.define('uTraveller.view.Main', {
                 title: 'Agenda',
                 iconCls: 'time',
                 items: {
-                        xtype: "agenda"
+                        xtype: 'agenda',
                 }
 
             },
             {
                 title: 'Messages',
                 iconCls: 'action',
-                layout: "fit",
-                styleHtmlContent: true,
-                items:[
-                {
-                    xtype: 'titlebar',
-                    docked: 'top',
-                    title: 'Messages',
-
-                    items: [
-                        {
-                            iconCls: "add",
-                            iconMask: true,
-                            align: 'left',
-                            text: 'New'
-                        },
-                        {
-                            iconCls: "delete",
-                            iconMask: true,
-                            align: 'right',
-                            text: 'Delete'
-                        }
-                        ]
-                },
-                {
-                    
-                    items: {
-                            xtype: "messages"
-                    }
+                items:{
+                        xtype: 'messageview',
                 }
 
-                ],
             },
             {
                 title: 'Settings',

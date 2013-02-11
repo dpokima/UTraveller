@@ -4,10 +4,9 @@ Ext.define('uTraveller.classes.list.messageItem',{
 	xtype:'messageitem',
 	user : null,
 	config:{
-		height: "46px",
+		height: "48px",
 		border: 1,
-		cls: "messageitem",
-		style: "border-top-color: rgb(242,237,237); border-bottom-color: rgb(15,1,1);"  
+		cls: "messageitem"
 	},
 	initialize : function(){
 		var self = this;
@@ -62,7 +61,7 @@ Ext.define('uTraveller.classes.list.messageItem',{
 		]);
 		self.element.on('tap', function () {
 		    console.log('messagetap');
-		    self.fireEvent('messagetap', self.id, self.user.get("firstName") + " " + self.user.get("lastName") );
+		    self.fireEvent('messagetap', self.id, self.user.get("firstName") + " " + self.user.get("lastName"), self.user);
 		});	
 	}
 });

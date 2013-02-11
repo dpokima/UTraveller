@@ -5,7 +5,8 @@
 
 .messageitem {
 	border-style: solid !important;
-	
+	border-top-color: rgb(242,237,237); 
+	border-bottom-color: rgb(15,1,1);  
 }
 
 .purpleE{
