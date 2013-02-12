@@ -21,17 +21,11 @@ Ext.define('uTraveller.view.messageView',{
 	                    items: [
 	                        {
 	                        	xtype: "button",
-	                            iconCls: "add",
+	                            iconCls: "compose",
 	                            iconMask: true,
 	                            align: 'left',
 	                            text: 'New',
 	                            action: "newMessage"
-	                        },
-	                        {
-	                            iconCls: "delete",
-	                            iconMask: true,
-	                            align: 'right',
-	                            text: 'Delete'
 	                        }
 	                        ]
 	                },

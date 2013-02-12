@@ -42,7 +42,7 @@ Ext.define('uTraveller.view.Main', {
             },
             {
                 title: 'Messages',
-                iconCls: 'action',
+                iconCls: 'mail',
                 items:{
                         xtype: 'messageview',
                 }

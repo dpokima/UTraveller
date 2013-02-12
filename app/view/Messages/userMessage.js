@@ -24,7 +24,7 @@ Ext.define("uTraveller.view.Messages.userMessage",{
 	                    items: [
 	                        {
 	                        	xtype: "button",
-	                            iconCls: "action",
+	                            iconCls: "chat",
 	                            iconMask: true,
 	                            align: 'left',
 	                            text: 'Messages',
