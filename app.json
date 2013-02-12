@@ -31,12 +31,17 @@
      *                                      //    cached inside localStorage until this value is changed.
      *                                      //  - "delta" to enable over-the-air delta update for this file
      *                                      //  - "full" means full update will be made when this file changes
+     *          "x-bootstrap": true         // (Optional)
+     *                                      // Indicates a development mode only dependency.  
+     *                                      // These files will not be copied into the build directory or referenced
+     *                                      // in the generate app.json manifest for the micro loader.
      *
      *      }
      */
     "js": [
         {
-            "path": "../touch/sencha-touch.js"
+            "path": "touch/sencha-touch.js",
+            "x-bootstrap": true
         },
         {
             "path": "app.js",
@@ -113,28 +118,8 @@
     "archivePath": "archive",
 
     /**
-     * Default paths to build this application to for each environment
-     */
-    "buildPaths": {
-        "testing": "build/testing",
-        "production": "build/production",
-        "package": "build/package",
-        "native": "build/native"
-    },
-
-    /**
-     * Build options
-     */
-    "buildOptions": {
-        "product": "touch",
-        "minVersion": 3,
-        "debug": false,
-        "logger": false
-    },
-
-    /**
      * Uniquely generated id for this application, used as prefix for localStorage keys.
      * Normally you should never change this value.
      */
-    "id": "970afdfb-764f-4dee-9c0b-362464c9b09b"
+    "id": "44f0cfe2-de4e-45a2-8a88-4e75c56dea4d"
 }
